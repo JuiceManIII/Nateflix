@@ -1,0 +1,90 @@
+:root {
+  --primary-color: rgb(218, 0, 55);
+  --primary-color-hover: rgb(255, 0, 55);
+  --light-color: rgb(237, 237, 237);
+  --medium-color: rgb(68, 68, 68);
+  --dark-color: rgb(23, 23, 23);
+
+  font-family: Arial;
+  font-size: 16px;
+
+  background-color: var(--medium-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-color: var(--dark-color);
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+}
+
+.text-logo {
+  color: var(--primary-color);
+  font-size: 2rem;
+  letter-spacing: 0.15ch;
+  padding: 0 1.5rem;
+}
+
+.text-logo:hover {
+  cursor: pointer;
+  color: var(--primary-color-hover);
+}
+
+.jumbotron-item {
+  color: var(--light-color);
+  font-size: 1rem;
+  padding: 0 0.75rem;
+}
+
+.jumbotron-item:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.jumbotron-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.jumbotron-icon:hover {
+  cursor: pointer;
+  color: var(--primary-color-hover);
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.btn {
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  /* opacity: 0.9; */
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid var(--light-color);
+  background-color: var(--primary-color);
+  /* opacity: 1; */
+}
